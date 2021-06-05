@@ -1,0 +1,320 @@
+
+ #root {
+ 
+    font-family: 'Roboto' !important; 
+
+    
+    
+    
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+ 
+  }
+.card .medium{height:730px !important}
+  
+#footer{
+  
+    flex-shrink: 0;
+}
+  #main{
+    min-height: 100vh;
+    flex: 1 0 auto !important;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+      font-family:"Manrope";
+  }
+section{
+    padding: 20px 0px 20px 0px;
+}
+.title-parallax{
+    position: absolute;
+    top:60px;
+    left:40%;
+   
+    
+  
+}
+
+  
+
+.parallax-container{
+    opacity:55% !important;
+    position: relative !important;
+    overflow: hidden !important;
+    height: 340px !important;
+
+  }
+
+
+.navLink{
+    font-size: 1.1rem;
+}
+
+.default-link:hover{
+    color:#f08e76 !important; 
+}
+.icon-link:hover{
+    color:#f08e76 !important; 
+    transition: 0.4s !important;
+}
+
+.navbar .main-nav{
+    background: linear-gradient(90deg, rgba(162,22,54,1) 6%, rgba(189,19,19,1) 50%, rgba(172,30,49,1) 94%); 
+}
+.auth-nav{
+    height: 50px;
+    
+}
+.brand-logo{
+    width: 200px !important;
+  
+}
+
+#section-follow .fa-4x{
+
+ margin:20px 20px;
+}
+
+.img-container{
+    margin: 5px;
+}
+
+.slider-link>h3{
+    color:rgb(255, 255, 255);
+    font-size: 2.5rem !important;
+}
+
+.footer-link{
+ font-size: 1.1rem !important;
+ margin-bottom:15px !important;
+}
+
+footer{
+    padding: 20px;
+    margin: 0;
+    z-index: 2;
+}
+
+.text-footer{
+    margin:0px;
+    padding: 0px;
+
+}
+.is-active{
+    color: #fff !important;
+}
+ .is-active{
+    background-color: rgb(45, 65, 73);
+
+}
+.is-active:hover{
+    color: rgb(45, 65, 73) !important;
+
+}
+
+.sidenav li>a:hover{
+    background-color: rgb(206, 206, 206) !important;
+}
+
+.card{
+    overflow: hidden;
+}
+
+.card-title{
+    padding: 0px 29px;
+    margin:0px;
+    font-weight: bold;
+}
+
+.img-article{
+    
+}
+
+.card-content{
+    margin:-18px 0px;
+    padding: 0px;
+
+
+}
+
+.link-card-gallery{
+    padding:0px 30px;
+}
+
+.login-form{
+    padding: 110px 0px;
+}
+
+.side-nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding: 0px  !important; 
+    margin: 0px !important;
+}
+
+.is-active-adm{
+  
+    padding: 0;
+    
+    width: 100%;
+    background-color:#37474f;
+}
+
+.adm-item{
+    text-align: center;
+    padding-top: 7px;
+    display: block;
+    height: 40px;
+}
+
+#sidenav-trigger-adm{
+    display: block;
+    padding-left: 9%;
+    margin-top: 5%;
+   
+}
+
+.btn-form{
+    margin-top: 50px;
+}
+
+.label-file-input{
+margin-top: 30px;
+
+}
+
+.form-delete{
+    margin-left:-4%;
+}
+
+.big-title{
+    left:25%;
+    position: absolute;
+    top:60px;
+}
+
+.adm-nav-top{
+    color:white !important;
+}
+.adm-nav-top:hover{
+    color:white !important;
+}
+
+.side-nav-adm>li:hover{
+    background-color: #343b42;
+}
+
+.card-gallery{
+    height: 40%;
+}
+
+
+.dropdown-item:hover{
+    background-color:#22272b !important;
+}
+@media screen and (max-width: 680px) {
+    .big-title{
+        left:5% !important;
+    }
+.parallax-container{
+   
+    
+    
+    opacity: 55% !important;
+    
+
+  }
+      }
+
+  
+@media screen and (max-width: 530px) {
+    .big-title{
+        left:5% !important;
+    }
+
+
+.parallax-container{
+  
+    
+    opacity: 55% !important;
+
+
+  }
+    
+  }
+  @media screen and (max-width: 395px) {
+    .big-title{
+        left:2% !important;
+    }
+     .nav-wrapper{
+	padding-left:6px !important;
+	}
+
+	.slider-link>h3{
+	font-size:28px !important;
+	}
+
+	.fa-4x{
+	font-size:3em !important;
+	margin:10px 10px !important
+	}
+.parallax-container{ opacity:55% !important}
+    
+  }
+
+  @media screen and (max-width: 348px) {
+    .big-title{
+        left:2% !important;
+    }
+    .parallax-container{ opacity:55% !important}
+  }
+
+  @media screen and (max-width: 288px) {
+    .big-title{
+        left:2% !important;
+    }
+    .parallax-container{ opacity:55% !important}
+  }
+
+@media screen and (max-width: 680px) {
+    .title-parallax{
+        left:35% !important;
+    }
+    .parallax-container{ opacity:55% !important}
+  }
+
+  
+@media screen and (max-width: 530px) {
+    .title-parallax{
+        left:30% !important;
+    }
+    .parallax-container{ opacity:55% !important}
+  }
+  @media screen and (max-width: 395px) {
+    .title-parallax{
+        left:22% !important;
+    }
+    .parallax-container{ opacity:55% !important}
+  }
+
+  @media screen and (max-width: 348px) {
+    .title-parallax{
+        left:18% !important;
+    }
+    .parallax-container{ opacity:55% !important}
+  }
+
+  @media screen and (max-width: 288px) {
+    .title-parallax{
+        left:10% !important;
+    }
+    .parallax-container{ opacity:55% !important}
+  }
+
+  

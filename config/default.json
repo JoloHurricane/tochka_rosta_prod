@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "jwtSecret":"salo jolo" ,
+    "mongoUri": "mongodb+srv://bogdan:b12345@cluster0.nt26w.mongodb.net/application",
+    "baseUrl":"http//localhost:5000"
+  }
