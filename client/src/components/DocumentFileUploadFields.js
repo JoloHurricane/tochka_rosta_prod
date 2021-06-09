@@ -41,7 +41,7 @@ function DocumentFileUploadFields(props){
                  
                    
                     <div className="input-field label-file-input col s3 offset-s2  m6 offset-m5  l1 offset-l4">
-                        <label for="file">Image</label>
+                        <label for="file">Файлы</label>
                       
                     </div>
                     <div className="input-field label-file-input col s2 m6 offset-m5  l4">

@@ -128,15 +128,19 @@ function GalleryCategoryFormEdit(){
     
           const updateHandler= async ()=>{
             try{
+              let checkImage = undefined
+              if (file == undefined){
+                checkImage=false
+              }else{checkImage=true}
               const dataForm = new FormData()
               dataForm.append("file", file)
            
               if (categoryId!==undefined){
-                  const data=await request(`/api/galleryCategory-edit/update/${categoryId}`,'POST',{...form} , 
+                  const data=await request(`/api/galleryCategory-edit/update/${categoryId}`,'POST',{...form,image:checkImage} , 
               {},'application/json')
               message(data.message)
               }else{
-                const data=await request(`/api/galleryCategory-edit/update/${id}`,'POST',{...form} , 
+                const data=await request(`/api/galleryCategory-edit/update/${id}`,'POST',{...form,image:checkImage} , 
               {},'application/json')
                   message(data.message)
                   const newArr = categories.filter(elem => elem._id == id)

@@ -134,16 +134,20 @@ function ArticleFormEdit(){
     
           const updateHandler= async ()=>{
             try{
-         
+              let checkImage = undefined
+              if (file == undefined){
+                checkImage=false
+              }else{checkImage=true}
+             
               const dataForm = new FormData()
               dataForm.append("file", file)
               if (articleId!==undefined){
-                const data=await request(`/api/articles-edit/update/${articleId}`,'POST',{...form} , 
+                const data=await request(`/api/articles-edit/update/${articleId}`,'POST',{...form,image:checkImage} , 
                 {},'application/json')
                 message(data.message)
               }
               else{
-                const  data=await request(`/api/articles-edit/update/${id}`,'POST',{...form} , 
+                const  data=await request(`/api/articles-edit/update/${id}`,'POST',{...form,image:checkImage} , 
                 {},'application/json')
                 message(data.message)
                 const newArr = articles.filter(elem => elem._id == id)
@@ -159,6 +163,7 @@ function ArticleFormEdit(){
                     {},)
                     message(imgdata.message)
                 }
+                
             
               
             }catch(e){

@@ -60,7 +60,7 @@ router.post('/update/:id', async (req, res) => {
       const category = await galleryCategory.findById(req.params.id)
       const {description,title,date} = req.body
      
-      if (category.img!=='placeholder.jpg'){
+      if (category.img!=='placeholder.jpg' && req.body.image!==false){
 	fs.unlink(`client/build/images/galleryCategory/${category.img}`,(err)=>{if (err) console.log(err)
 	else console.log(`${category.img} deleted`)
 

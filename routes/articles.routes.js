@@ -55,7 +55,7 @@ router.post('/update/:id', async (req, res) => {
   try {
    
       const article = await Article.findById(req.params.id)
-    if (article.img !== 'placeholder.jpg'){
+    if (article.img !== 'placeholder.jpg' && req.body.image!==false){
 	fs.unlink(`client/build/images/articles/${article.img}`,(err)=>{
 	if (err) return res.status(500).json({message:'С удалением что-то не так'})
 	else console.log(`${article.img} deleted`)
